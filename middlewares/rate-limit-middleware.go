@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	rate, _     = limiter.NewRateFromFormatted("2-M") // 20 requests per minute
+	rate, _     = limiter.NewRateFromFormatted("20-M") // 20 requests per minute
 	store       = memory.NewStore()
 	rateLimiter = limiter.New(store, rate)
 )
