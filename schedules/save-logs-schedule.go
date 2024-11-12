@@ -16,6 +16,4 @@ func SaveLogs(x *cron.Cron) {
 
 		firebase_helper.UploadAsJson(logs)
 	})
-
-	x.Start()
 }

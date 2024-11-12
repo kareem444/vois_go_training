@@ -19,4 +19,6 @@ func registerCron() {
 	var c *cron.Cron = cron.New()
 	schedules.UpdateArticles(c)
 	schedules.SaveLogs(c)
+
+	c.Start()
 }

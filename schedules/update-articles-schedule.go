@@ -9,6 +9,4 @@ func UpdateArticles(x *cron.Cron) {
 	x.AddFunc("@every 30m", func() {
 		articles.UpdateScheduler()
 	})
-
-	x.Start()
 }
